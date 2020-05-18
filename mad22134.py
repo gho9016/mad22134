@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 from discord.ext import commands
 from discord.ext.commands import bot
@@ -12,5 +13,7 @@ async def on_ready():
 @bot.command()
 async def 핑(ctx):
     await ctx.send('퐁 {0}초'.format(bot.latency))
+    
 
-bat.run('NzExOTIxOTIxOTg1NjA5NzM5.XsKE3w.Qhr-2HzvWQmki2F7ICcNr3Wz5N8')
+access_token = os.environ["BOT_TOKEN"]
+bat.run('access_token')
